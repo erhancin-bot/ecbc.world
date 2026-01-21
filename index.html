@@ -3,622 +3,240 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EC Group | Industrial Technology · Trade · Innovation</title>
+  <title>ECBC Group | Industrial Technology · Trade · Innovation</title>
 
   <!-- SEO -->
-  <meta name="description" content="EC Group is a multidisciplinary company operating across industrial technology, analytical instruments, software, trade, and selective investments." />
+  <meta name="description" content="ECBC Group is a multidisciplinary company operating across industrial technology, analytical instruments, software, trade, and innovation." />
   <link rel="canonical" href="https://ecbc.world/" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="EC Group" />
+  <meta property="og:title" content="ECBC Group" />
   <meta property="og:description" content="Industrial Technology · Trade · Innovation" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ecbc.world/" />
-  <!-- <meta property="og:image" content="https://ecbc.world/og-image.png" /> -->
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EC Group" />
-  <meta name="twitter:description" content="Industrial Technology · Trade · Innovation" />
-
-  <!-- Fonts (system stack, fast) -->
   <style>
     :root{
       --navy:#0B1C2D;
       --gold:#C9A24D;
-      --ink:#0f172a;
       --muted:#475569;
-      --bg:#ffffff;
-      --panel:#0b1c2d0d;
       --stroke:#e2e8f0;
-      --shadow: 0 10px 30px rgba(2, 6, 23, 0.10);
-      --radius: 18px;
-      --radius-lg: 28px;
-      --max: 1180px;
+      --max:1180px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--ink);
-      background: radial-gradient(1200px 800px at 80% -10%, rgba(201,162,77,.18), transparent 60%),
-                  radial-gradient(900px 700px at 10% 0%, rgba(11,28,45,.16), transparent 55%),
-                  var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:#fff;
+      color:#0f172a;
       line-height:1.55;
-      overflow-x:hidden;
     }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding: 0 20px}
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 12px 16px;
-      border-radius: 999px;
-      border:1px solid transparent;
-      font-weight: 650;
-      letter-spacing:.2px;
-      transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
-      cursor:pointer;
-      user-select:none;
-      white-space:nowrap;
-    }
-    .btn:active{transform: translateY(1px)}
-    .btn-primary{
-      background: linear-gradient(135deg, var(--gold), #e2c26d);
-      color:#0b1c2d;
-      box-shadow: var(--shadow);
-    }
-    .btn-primary:hover{transform: translateY(-1px)}
-    .btn-ghost{
-      background: rgba(255,255,255,.65);
-      border-color: var(--stroke);
-      backdrop-filter: blur(8px);
-    }
-    .btn-ghost:hover{border-color:#cbd5e1}
-    .pill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.65);
-      backdrop-filter: blur(10px);
-      font-size: 13px;
-      color: var(--muted);
-    }
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:auto;padding:0 20px}
     header{
-      position: sticky; top:0; z-index:50;
-      background: rgba(255,255,255,.7);
-      border-bottom: 1px solid rgba(226,232,240,.7);
-      backdrop-filter: blur(10px);
+      position:sticky;top:0;
+      background:#ffffffcc;
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--stroke);
+      z-index:10;
     }
     .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding: 14px 0;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:14px 0;
     }
     .brand{
-      display:flex; align-items:center; gap:12px;
-      font-weight: 800;
-      letter-spacing: .3px;
+      display:flex;align-items:center;gap:12px;
+      font-weight:800;
+      letter-spacing:.3px;
     }
-    .brand-mark{
-      width: 34px; height: 34px;
-      border-radius: 12px;
-      background:
-        radial-gradient(12px 12px at 35% 35%, rgba(201,162,77,.95), rgba(201,162,77,.0) 60%),
-        radial-gradient(18px 18px at 70% 70%, rgba(11,28,45,.85), rgba(11,28,45,.0) 62%),
-        linear-gradient(135deg, rgba(11,28,45,.95), rgba(11,28,45,.80));
-      box-shadow: 0 12px 25px rgba(2,6,23,.12);
-      position:relative;
-      overflow:hidden;
+    .brand img{
+      height:36px;
+      width:auto;
     }
-    .brand-mark:after{
-      content:"";
-      position:absolute; inset:-30%;
-      background: linear-gradient(90deg, transparent, rgba(201,162,77,.35), transparent);
-      transform: rotate(25deg);
+    nav ul{
+      list-style:none;display:flex;gap:18px;margin:0;padding:0;
     }
-    .brand span{color:var(--navy)}
-    .brand em{font-style:normal; color:var(--gold)}
-    nav ul{list-style:none; display:flex; gap:18px; margin:0; padding:0; align-items:center}
-    nav a{
-      font-weight: 650;
-      color: #0f172a;
-      opacity:.82;
-      padding: 8px 10px;
-      border-radius: 12px;
-      transition: background .15s ease, opacity .15s ease;
-    }
-    nav a:hover{background: rgba(11,28,45,.06); opacity:1}
-    .menu-btn{display:none}
+    nav a{font-weight:600;opacity:.85}
+    nav a:hover{opacity:1}
     .hero{
-      padding: 54px 0 30px;
+      padding:60px 0 40px;
+      background:linear-gradient(135deg,#f8fafc,#ffffff);
     }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 26px;
-      align-items: stretch;
-    }
-    .card{
-      border: 1px solid rgba(226,232,240,.85);
-      background: rgba(255,255,255,.78);
-      border-radius: var(--radius-lg);
-      box-shadow: 0 12px 40px rgba(2,6,23,.08);
-      backdrop-filter: blur(10px);
-    }
-    .hero-card{padding: 30px}
     h1{
-      margin: 0 0 12px;
-      font-size: clamp(30px, 3.2vw, 46px);
-      line-height: 1.08;
-      letter-spacing: -0.6px;
-      color: var(--navy);
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.1;
+      margin:0 0 16px;
+      color:var(--navy);
     }
     .sub{
-      font-size: 16px;
-      color: var(--muted);
-      margin: 0 0 18px;
-      max-width: 62ch;
+      max-width:700px;
+      color:var(--muted);
+      font-size:16px;
     }
-    .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top: 18px}
-    .metrics{
-      display:grid; grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 22px;
+    .actions{margin-top:22px;display:flex;gap:12px}
+    .btn{
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
     }
-    .metric{
-      padding: 14px 14px;
-      border-radius: 18px;
-      background: rgba(11,28,45,.05);
-      border: 1px solid rgba(226,232,240,.9);
+    .primary{
+      background:linear-gradient(135deg,var(--gold),#e6c87a);
+      color:#0b1c2d;
     }
-    .metric b{display:block; font-size: 18px; color: var(--navy)}
-    .metric span{font-size: 13px; color: var(--muted)}
-    .side-card{padding: 22px; display:flex; flex-direction:column; gap: 14px}
-    .side-card h3{margin: 0; font-size: 16px; color: var(--navy)}
-    .list{display:flex; flex-direction:column; gap: 10px}
-    .li{
-      display:flex; gap: 12px; align-items:flex-start;
-      padding: 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(226,232,240,.9);
-      background: rgba(255,255,255,.70);
+    .ghost{
+      border:1px solid var(--stroke);
+      background:#fff;
     }
-    .dot{
-      width: 10px; height: 10px; border-radius: 99px;
-      background: var(--gold);
-      box-shadow: 0 0 0 4px rgba(201,162,77,.18);
-      margin-top: 6px;
-      flex: 0 0 auto;
+    section{padding:50px 0}
+    h2{
+      margin:0 0 14px;
+      font-size:24px;
+      color:var(--navy);
     }
-    section{padding: 34px 0}
-    .section-title{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap: 14px;
-      margin-bottom: 16px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
     }
-    .section-title h2{
-      margin: 0;
-      font-size: 22px;
-      color: var(--navy);
-      letter-spacing:-.2px;
+    .card{
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      padding:20px;
+      background:#fff;
     }
-    .section-title p{
-      margin: 0;
-      color: var(--muted);
-      max-width: 70ch;
-      font-size: 14px;
-    }
-    .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px}
-    .grid-2{display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px}
-    .tile{
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(226,232,240,.9);
-      background: rgba(255,255,255,.78);
-      box-shadow: 0 10px 30px rgba(2,6,23,.05);
-    }
-    .tile h3{margin:0 0 8px; color:var(--navy); font-size: 16px}
-    .tile p{margin:0; color:var(--muted); font-size: 14px}
-    .icon{
-      width: 38px; height: 38px; border-radius: 14px;
-      background: rgba(11,28,45,.08);
-      display:grid; place-items:center;
-      border: 1px solid rgba(226,232,240,.9);
-      margin-bottom: 10px;
-    }
-    .icon svg{width: 20px; height:20px; fill: none; stroke: var(--navy); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round}
-    .cta{
-      padding: 24px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 14px;
-      background:
-        radial-gradient(900px 500px at 10% 10%, rgba(201,162,77,.25), transparent 55%),
-        linear-gradient(135deg, rgba(11,28,45,.96), rgba(11,28,45,.82));
-      color:#fff;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255,255,255,.14);
-      box-shadow: var(--shadow);
-    }
-    .cta h3{margin:0 0 6px; font-size: 18px}
-    .cta p{margin:0; opacity:.88; font-size: 14px}
-    .cta .btn{box-shadow:none}
-    .cta .btn-ghost{
-      background: rgba(255,255,255,.10);
-      border-color: rgba(255,255,255,.18);
-      color:#fff;
-    }
-    .timeline{
-      display:grid; gap: 10px;
-    }
-    .step{
-      display:flex; gap: 12px;
-      padding: 14px;
-      border-radius: 18px;
-      border: 1px solid rgba(226,232,240,.9);
-      background: rgba(255,255,255,.78);
-    }
-    .badge{
-      width: 34px; height: 34px; border-radius: 12px;
-      background: rgba(201,162,77,.18);
-      border: 1px solid rgba(201,162,77,.35);
-      display:grid; place-items:center;
-      font-weight: 800;
-      color: var(--gold);
-      flex: 0 0 auto;
-    }
-    .step b{display:block; color:var(--navy)}
-    .step span{display:block; color:var(--muted); font-size: 13px}
-    .contact{
-      display:grid; grid-template-columns: 1fr 1fr; gap: 14px;
-    }
-    .kv{
-      display:flex; flex-direction:column; gap: 8px;
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(226,232,240,.9);
-      background: rgba(255,255,255,.78);
-    }
-    .kv small{color: var(--muted)}
-    .kv b{color: var(--navy)}
     footer{
-      padding: 24px 0 38px;
-      color: var(--muted);
-      font-size: 13px;
+      border-top:1px solid var(--stroke);
+      padding:30px 0;
+      font-size:13px;
+      color:var(--muted);
     }
-    .foot{
-      display:flex; align-items:center; justify-content:space-between; gap: 12px;
-      border-top: 1px solid rgba(226,232,240,.85);
-      padding-top: 16px;
-    }
-    .tiny-links{display:flex; gap: 12px; flex-wrap:wrap}
-    .tiny-links a{opacity:.85}
-    .tiny-links a:hover{opacity:1}
-
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero-grid{grid-template-columns: 1fr; }
-      .metrics{grid-template-columns: repeat(3, 1fr)}
-      .grid-3{grid-template-columns: 1fr}
-      .grid-2{grid-template-columns: 1fr}
-      .contact{grid-template-columns: 1fr}
+    @media(max-width:768px){
       nav ul{display:none}
-      .menu-btn{display:inline-flex}
     }
   </style>
 </head>
 
 <body>
+
 <header>
-  <div class="wrap">
-    <div class="nav">
-      <a class="brand" href="#top" aria-label="EC Group">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div><span>EC</span> <em>Group</em></div>
-      </a>
-
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="#sectors">Sectors</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-          <li><a href="#roadmap">Samsun Roadmap</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a class="btn btn-primary menu-btn" href="#contact">Contact</a>
+  <div class="wrap nav">
+    <div class="brand">
+      <!-- LOGO -->
+      <img src="assets/ecbc-logo.png" alt="ECBC Group Logo">
+      <span>ECBC Group</span>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="card hero-card">
-          <div class="pill">Global · Practical · Execution-Driven</div>
-          <h1>Industrial Technology, Trade & Innovation — built to scale.</h1>
-          <p class="sub">
-            EC Group is a multidisciplinary company operating across industrial technology, analytical instruments,
-            software, trade, and selective investments. We focus on measurable outcomes and long-term partnerships.
-          </p>
+<main>
 
-          <div class="actions">
-            <a class="btn btn-primary" href="#sectors">
-              Explore Sectors
-              <span aria-hidden="true">→</span>
-            </a>
-            <a class="btn btn-ghost" href="#contact">Request a Call</a>
-          </div>
+<section class="hero">
+  <div class="wrap">
+    <h1>Industrial Technology, Trade & Innovation</h1>
+    <p class="sub">
+      ECBC Group operates across industrial technology, analytical instruments,
+      software, global trade, and innovation-driven projects.
+      We focus on execution, compliance, and long-term value creation.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">Start a Conversation</a>
+      <a class="btn ghost" href="#sectors">Explore Sectors</a>
+    </div>
+  </div>
+</section>
 
-          <div class="metrics" role="list" aria-label="Highlights">
-            <div class="metric" role="listitem">
-              <b>Industry-first</b>
-              <span>Execution over noise</span>
-            </div>
-            <div class="metric" role="listitem">
-              <b>Global-ready</b>
-              <span>Partners & exports</span>
-            </div>
-            <div class="metric" role="listitem">
-              <b>Compliance</b>
-              <span>Documentation & quality</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card side-card">
-          <h3>What we deliver</h3>
-          <div class="list">
-            <div class="li">
-              <div class="dot"></div>
-              <div>
-                <b>Industrial Platforms</b>
-                <div style="color:var(--muted); font-size:13px;">
-                  Assembly, calibration, testing, and scalable manufacturing operations.
-                </div>
-              </div>
-            </div>
-            <div class="li">
-              <div class="dot"></div>
-              <div>
-                <b>Analytical Instruments</b>
-                <div style="color:var(--muted); font-size:13px;">
-                  XRF-focused workflows for precious metals, alloys, and industrial inspection.
-                </div>
-              </div>
-            </div>
-            <div class="li">
-              <div class="dot"></div>
-              <div>
-                <b>Trade & Distribution</b>
-                <div style="color:var(--muted); font-size:13px;">
-                  International sourcing, regional distribution, and partner-led go-to-market.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cta">
-            <div>
-              <h3>Let’s build a partnership</h3>
-              <p>Fast alignment, clean execution, and a global mindset.</p>
-            </div>
-            <a class="btn btn-ghost" href="#contact">Start</a>
-          </div>
-        </div>
+<section id="sectors">
+  <div class="wrap">
+    <h2>Sectors</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Industrial Technology</h3>
+        <p>Manufacturing, assembly, calibration, and export-oriented industrial operations.</p>
+      </div>
+      <div class="card">
+        <h3>Analytical Instruments</h3>
+        <p>XRF-focused solutions for precious metals, alloys, scrap, and inspection.</p>
+      </div>
+      <div class="card">
+        <h3>Trade & Distribution</h3>
+        <p>Global sourcing, compliant importing, regional sales, and partnerships.</p>
+      </div>
+      <div class="card">
+        <h3>Software & Digital</h3>
+        <p>Operational tools, dashboards, and digital enablement for industry.</p>
+      </div>
+      <div class="card">
+        <h3>Agro & Tourism</h3>
+        <p>Selective investments aligned with regional and operational strengths.</p>
+      </div>
+      <div class="card">
+        <h3>Innovation Studio</h3>
+        <p>Pilot projects, validation, and scalable commercialization.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="sectors">
-    <div class="wrap">
-      <div class="section-title">
-        <div>
-          <h2>Sectors</h2>
-          <p>Focused verticals with clear operational and commercial strategies.</p>
-        </div>
+<section id="capabilities">
+  <div class="wrap">
+    <h2>Capabilities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Execution</h3>
+        <p>From sourcing to delivery — real operations, not presentations.</p>
       </div>
-
-      <div class="grid-3">
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-8h6v8"/></svg>
-          </div>
-          <h3>Industrial Technology</h3>
-          <p>Manufacturing operations, assembly lines, calibration benches, and export-oriented industrial execution.</p>
-        </div>
-
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M7 7v10"/><path d="M17 7v10"/><path d="M5 17h14"/><path d="M10 17v3"/><path d="M14 17v3"/></svg>
-          </div>
-          <h3>Analytical Instruments</h3>
-          <p>XRF and analytical technologies for precious metals, alloys/scrap, and industrial inspection workflows.</p>
-        </div>
-
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M6 8h12"/><path d="M6 22V8"/><path d="M18 22V8"/><path d="M9 14h6"/></svg>
-          </div>
-          <h3>Trade & Distribution</h3>
-          <p>Global sourcing, compliance-first importing, partner development, and regional distribution strategies.</p>
-        </div>
-
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 14l8-8 8 8"/><path d="M6 12v8h12v-8"/></svg>
-          </div>
-          <h3>Software & Digital</h3>
-          <p>Operational tools, dashboards, and digital platforms that accelerate industrial workflows and decision-making.</p>
-        </div>
-
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 19c5-6 11-6 16 0"/><path d="M7 10c1.5-2 3-3 5-3s3.5 1 5 3"/><path d="M12 7V3"/></svg>
-          </div>
-          <h3>Agro & Tourism</h3>
-          <p>Selective projects in agro-industrial value creation and tourism, aligned with regional advantages.</p>
-        </div>
-
-        <div class="tile">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
-          </div>
-          <h3>Innovation Studio</h3>
-          <p>Rapid validation, pilot programs, and scalable commercialization — from concept to market execution.</p>
-        </div>
+      <div class="card">
+        <h3>Compliance</h3>
+        <p>Customs, documentation, quality systems, and risk control.</p>
+      </div>
+      <div class="card">
+        <h3>Partnership Models</h3>
+        <p>OEM, distribution, demo programs, and structured market entry.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="capabilities">
-    <div class="wrap">
-      <div class="section-title">
-        <div>
-          <h2>Capabilities</h2>
-          <p>We turn complex cross-border projects into structured, trackable execution.</p>
-        </div>
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card">
+        <b>Email</b><br>
+        <a href="mailto:ec@ecbc.world">ec@ecbc.world</a>
       </div>
-
-      <div class="grid-2">
-        <div class="tile">
-          <h3>Operational Execution</h3>
-          <p>
-            Assembly, calibration, quality documentation, sourcing, logistics coordination, and supplier negotiation.
-            Built for real-world constraints, not slide decks.
-          </p>
-        </div>
-        <div class="tile">
-          <h3>Compliance & Risk Control</h3>
-          <p>
-            Customs readiness, documentation discipline, and a risk-first approach for regulated or sensitive equipment
-            (e.g., X-ray/XRF workflows).
-          </p>
-        </div>
-        <div class="tile">
-          <h3>Partner-Led Growth</h3>
-          <p>
-            Pilot programs, demo units, open-account structures (where appropriate), distributor onboarding, and
-            long-term partnership frameworks.
-          </p>
-        </div>
-        <div class="tile">
-          <h3>Export Orientation</h3>
-          <p>
-            From Turkey to global markets: scalable processes, clear technical positioning, and long-term product
-            support readiness.
-          </p>
-        </div>
+      <div class="card">
+        <b>Website</b><br>
+        <a href="https://ecbc.world">www.ecbc.world</a>
+      </div>
+      <div class="card">
+        <b>Location</b><br>
+        Turkey
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="roadmap">
-    <div class="wrap">
-      <div class="section-title">
-        <div>
-          <h2>Samsun Roadmap</h2>
-          <p>A practical 3-phase plan for establishing Turkey-based assembly, calibration, and scaling.</p>
-        </div>
-      </div>
-
-      <div class="timeline">
-        <div class="step">
-          <div class="badge">1</div>
-          <div>
-            <b>Phase 1 — Assembly & Calibration (0–6 months)</b>
-            <span>Final assembly, software integration, calibration, QC, and controlled pilot operations.</span>
-          </div>
-        </div>
-        <div class="step">
-          <div class="badge">2</div>
-          <div>
-            <b>Phase 2 — Localization & Capacity (6–18 months)</b>
-            <span>Local mechanical parts, partial electronics, workflow automation, and cost-down initiatives.</span>
-          </div>
-        </div>
-        <div class="step">
-          <div class="badge">3</div>
-          <div>
-            <b>Phase 3 — Export & Co-Branding (18+ months)</b>
-            <span>EU/USA export readiness under compliance standards; OEM or co-branding models.</span>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:16px" class="cta">
-        <div>
-          <h3>Need a structured pilot?</h3>
-          <p>We can run a controlled market-entry pilot and scale based on real demand.</p>
-        </div>
-        <a class="btn btn-ghost" href="#contact">Contact</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <div class="section-title">
-        <div>
-          <h2>Contact</h2>
-          <p>Partnerships, sourcing, pilots, and industrial projects — reach out directly.</p>
-        </div>
-      </div>
-
-      <div class="contact">
-        <div class="kv">
-          <small>Email</small>
-          <b><a href="mailto:ec@ecbc.world">ec@ecbc.world</a></b>
-          <small>Website</small>
-          <b><a href="https://ecbc.world" target="_blank" rel="noreferrer">ecbc.world</a></b>
-          <small>Location</small>
-          <b>Turkey</b>
-        </div>
-
-        <div class="kv">
-          <small>Quick note</small>
-          <b>What to include in your message</b>
-          <small style="line-height:1.6">
-            • Your company and country<br/>
-            • What you need (product / partnership / sourcing)<br/>
-            • Target market and timeline<br/>
-            • Any technical specs or requirements
-          </small>
-          <div style="margin-top:12px">
-            <a class="btn btn-primary" href="mailto:ec@ecbc.world?subject=Partnership%20Inquiry%20-%20EC%20Group&body=Hello%20EC%20Group%2C%0A%0ACompany%3A%0ACountry%3A%0ARequest%3A%0ATimeline%3A%0ASpecs%3A%0A%0ABest%2C%0A">
-              Email EC Group
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:14px" class="pill">
-        Tip: When DNS is new, propagation may take 5–60 minutes. SSL may take slightly longer.
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div>© <span id="y"></span> EC Group. All rights reserved.</div>
-      <div class="tiny-links">
-        <a href="#top">Top</a>
-        <a href="#sectors">Sectors</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+    © <span id="y"></span> ECBC Group. All rights reserved.
   </div>
 </footer>
 
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
